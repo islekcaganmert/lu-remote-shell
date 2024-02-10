@@ -17,7 +17,7 @@ type shell struct {
 }
 
 func get_aas(domain string) (string, error) {
-	resp, err := http.PostForm("https://serveraas.pythonanywhere.com/protocols/aas/get", url.Values{
+	resp, err := http.PostForm("https://aas.hereus.net/protocols/aas/get", url.Values{
 		"domain": {domain},
 	})
 	if err != nil {
